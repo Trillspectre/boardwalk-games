@@ -19,7 +19,14 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
-    text-transform: uppercase;
+}
+h1,
+h2 {
+text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 2rem
 }
 
 .sub-heading-color {
@@ -44,6 +51,16 @@ h3 {
     font-family: var(--secondary-font);
 }
 
+/*Services*/
+
+#services .card-footer {
+    font-weight: bold;
+    color: var(--highlight-color);
+    background-color: transparent;
+}
+#services .card {
+    margin-bottom: 1.5rem;
+}
 /* grid visualisations CSS for testing */
 /*.container,
 .row {
@@ -54,3 +71,34 @@ h3 {
     border: 2px solid white;
     background-color: lightgrey;
 } */
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    #services .card-body {
+        min-height:191px;
+    }
+}
+
+/* Large devices (tablets, 992px and up) */
+@media screen and (min-width: 992px) {
+    #services .card-body {
+        min-height:auto;
+    }
+}
+
+/*  Extra Large devices (tablets, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    #services .card-body {
+        min-height:220px;
+    }
+}
+
+/* Extra Extra Large devices (tablets, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    #services .card-body {
+        min-height:195;
+    }
+}
+
+
+

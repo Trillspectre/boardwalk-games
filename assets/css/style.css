@@ -2,27 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
 /* Css variables */
 
-:root{
-    --primary-font:"inter", sans-serif;
-    --secondary-font:"Macondo", cursive;
-    --primary-color:#3a2620; /* dark brown */
-    --secondary-color:#aa9581  ; /* light brown */
-    --highlight-color:#416a8e; /* blue */
-    --light-highlight-color:#7a9fc2; /* light blue */
+:root {
+    --primary-font: "inter", sans-serif;
+    --secondary-font: "Macondo", cursive;
+    --primary-color: #3a2620;
+    /* dark brown */
+    --secondary-color: #aa9581;
+    /* light brown */
+    --highlight-color: #416a8e;
+    /* blue */
+    --light-highlight-color: #7a9fc2;
+    /* light blue */
 }
+
 /* Global styles */
-body{  
+body {
     font-family: var(--primary-font);
 }
+
 h1,
 h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
 }
+
 h1,
 h2 {
-text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -32,7 +39,8 @@ h2 {
 .sub-heading-color {
     color: var(--light-highlight-color);
 }
-.section{
+
+.section {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -46,6 +54,7 @@ h2 {
 #navbar .logo {
     width: 30px;
 }
+
 /*Header*/
 #header .lead {
     font-family: var(--secondary-font);
@@ -58,8 +67,50 @@ h2 {
     color: var(--highlight-color);
     background-color: transparent;
 }
+
 #services .card {
     margin-bottom: 1.5rem;
+
+    /* Game library */
+    #new-games .card,
+    #fav-games .card {
+        border: none
+    }
+}
+
+/* footer / contact */
+#contact {
+    background-color: var(--primary-color);
+    color: white;
+    padding: bottom 3rem;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact .sub-heading-color {
+    color: var(--light-highlight-color);
+    font-size: 1.9rem;
+}
+
+#contact i {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+#contact .social-links i {
+    color: var(--light-highlight-color); 
+    font-size: 1.9rem;
+    transition: color 0.3s ease-in-out;
+}
+#contact .social-links i:hover {
+    color: var(--secondary-color);
+}
+
+#contact .table-dark *{
+    background-color: transparent;
 }
 /* grid visualisations CSS for testing */
 /*.container,
@@ -75,30 +126,27 @@ h2 {
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
     #services .card-body {
-        min-height:191px;
+        min-height: 191px;
     }
 }
 
 /* Large devices (tablets, 992px and up) */
 @media screen and (min-width: 992px) {
     #services .card-body {
-        min-height:auto;
+        min-height: auto;
     }
 }
 
 /*  Extra Large devices (tablets, 1200px and up) */
 @media screen and (min-width: 1200px) {
     #services .card-body {
-        min-height:220px;
+        min-height: 220px;
     }
 }
 
 /* Extra Extra Large devices (tablets, 1400px and up) */
 @media screen and (min-width: 1400px) {
     #services .card-body {
-        min-height:195;
+        min-height: 195;
     }
 }
-
-
-
